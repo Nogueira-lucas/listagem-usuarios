@@ -1,0 +1,35 @@
+<div class="users">
+  <h3 class="users-title">Lista de usuários</h3>
+  <div class="users-list_box">
+    <div *ngFor="let user of users | async" class="users-list_box-container">
+      <user-card *ngIf="!isLoadingPage"
+        [user]="user" 
+        (click)="openDialog(user)"
+        class="users-list_box-container-card">
+      </user-card>
+      <mat-spinner *ngIf="isLoadingPage"></mat-spinner>
+    </div>
+  </div>
+
+  <div class="users-favorite">
+    <h3 class="users-title">Favoritos:</h3>
+    <br>
+
+    <div class="users-favorite_list">
+      <mat-chip-list class="users-favorite_list-chips" 
+        *ngFor="let user of users | async">
+        <mat-chip *ngIf="isFavorite(user)"
+          [removable]="isRemovable" (removed)="removeFavorite(user)">
+          {{user.name}}
+          <mat-icon matChipRemove *ngIf="isRemovable">cancel</mat-icon>
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+  
+</div>
+<footer class="users-footer">
+  <span>Por Lucas Marques Nogueira, 2020. </span>
+  <a href="https://www.linkedin.com/in/lnogueiratdm/">LinkedIn</a> -
+  <a href="https://github.com/Nogueira-lucas">GitHub</a>
+</footer>

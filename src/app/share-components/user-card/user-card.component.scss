@@ -1,0 +1,25 @@
+.user_card{
+  max-width: 200px;
+  background-color: #fff;
+  cursor: pointer;
+
+  &-favorite {
+    background-color: rgb(218, 205, 37);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    
+    &-name {
+      font-size: 1.3em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &-email {
+      font-size: 1em;
+      color: #000;
+    }
+  }
+}
