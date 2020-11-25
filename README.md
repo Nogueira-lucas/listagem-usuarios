@@ -14,7 +14,10 @@ Execute `npm run test` para visualizar o terminal do KARMA. Nele é possível mo
 
 ![imagem](evidencias/tela-karma.png)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1304e4093bd037a7c47f3ae242762a17b3bf32b
 ## Respostas do Questionário
 
   1- Se eu precisar trabalhar com um ambiente de desenvolvimento, um de testes e um
