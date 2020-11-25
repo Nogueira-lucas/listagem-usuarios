@@ -1,6 +1,6 @@
 # TesteFront - LUCAS NOGUEIRA 
 
-Estre projeto foi feito em Angular versão 9.1.1.
+Este projeto foi feito em Angular versão 9.1.1.
 
 ### [Demo em GitHub Pages](https://nogueira-lucas.github.io/listagem-usuarios/)
 
