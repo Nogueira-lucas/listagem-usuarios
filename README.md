@@ -1,5 +1,14 @@
 # TesteFront - LUCAS NOGUEIRA 
 
+Descrição: Página de gestão de usuários e favoritos.
+
+Tecnologias utilizadas | Item/link
+------------ | -------------
+SPA Framework | [Angular 9](https://angular.io/)
+Pré-processador | [Sass](https://sass-lang.com/)
+Biblioteca de Componentes | [NgMaterial](https://material.angular.io/)
+GeoLocalização e mapas | [OpenLayers](https://openlayers.org/)
+
 Este projeto foi feito em Angular versão 9.1.1.
 
 ### [Demo em GitHub Pages](https://nogueira-lucas.github.io/listagem-usuarios/)
