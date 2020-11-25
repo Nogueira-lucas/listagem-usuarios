@@ -18,10 +18,19 @@ export class UserService {
   }
 
   addAsFavorite(user: UserInterface) {
-    sessionStorage.setItem(user.name, `${user.id}`);
+    try {
+      sessionStorage.setItem(user.name, `${user.id}`);
+      return false;
+    } catch(err) {
+      return err;
+    }
   }
 
   removeFavorite(user: UserInterface) {
-    sessionStorage.removeItem(user.name);
+    try {
+      sessionStorage.removeItem(user.name);
+    } catch(err) {
+      return err;
+    }
   }
 }

@@ -1,12 +1,7 @@
 import { Component, OnInit, Inject, AfterViewInit } from '@angular/core';
 import { UserInterface } from 'src/app/interfaces/user.interface';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-
 import Map from 'ol/Map';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
-import XYZ from 'ol/source/XYZ';
-import ZoomToExtent from 'ol/control/ZoomToExtent';
 import { UserService } from 'src/app/services/user.service';
 
 declare var ol: any;
@@ -18,7 +13,8 @@ declare var ol: any;
 })
 export class UserDetailsModalComponent implements OnInit, AfterViewInit {
 
-  user: UserInterface
+  user: UserInterface;
+  map: Map;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: UserInterface,
@@ -34,8 +30,6 @@ export class UserDetailsModalComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.user = this.data;
   }
-
-  map: Map;
 
   ngAfterViewInit() {
     this.map = new ol.Map({
