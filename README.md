@@ -2,6 +2,8 @@
 
 Estre projeto foi feito em Angular versão 9.1.1.
 
+### [Demo em GitHub Pages](https://nogueira-lucas.github.io/listagem-usuarios/)
+
 ## Desenvolvimento
 
 Execute `ng serve` para abrir o ambiente de desenvolvemento Angular. Navegue para `http://localhost:4200/`. Você também pode executar `ng serve -o` para abrir automaticamente uma janela em seu navegador.
