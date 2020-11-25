@@ -1,14 +1,18 @@
-# TesteFront
+# TesteFront - LUCAS NOGUEIRA 
 
 Estre projeto foi feito em Angular versão 9.1.1.
 
 ## Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `ng serve` para abrir o ambiente de desenvolvemento Angular. Navegue para `http://localhost:4200/`. Você também pode executar `ng serve -o` para abrir automaticamente uma janela em seu navegador.
+
+![imagem](evidencias/tela-principal.png)
 
 ## Testes de Unidade
 
 Execute `npm run test` para visualizar o terminal do KARMA. Nele é possível monitorar os testes de unidade configurados no projeto.
+
+![imagem](evidencias/tela-karma.png)
 
 ## Testes e2e - Integração
 
