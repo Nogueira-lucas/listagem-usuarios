@@ -14,8 +14,6 @@ Execute `npm run test` para visualizar o terminal do KARMA. Nele é possível mo
 
 ![imagem](evidencias/tela-karma.png)
 
-## Testes e2e - Integração
-
 
 ## Respostas do Questionário
 
